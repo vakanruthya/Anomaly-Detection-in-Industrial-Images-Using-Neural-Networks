@@ -54,21 +54,11 @@ Before training, images were preprocessed to ensure consistent input for the neu
 
 Steps include:
 
-Image resizing (RGB images resized to manageable dimensions)
-
-Normalization of pixel values
-
-Binary mask conversion for ground truth segmentation
-
-Thresholding to identify anomaly regions
+Image resizing (RGB images resized to manageable dimensions, Normalization of pixel values, Binary mask conversion for ground truth segmentation, Thresholding to identify anomaly regions
 
 This preprocessing step helps reduce noise and improves model training efficiency.
 
-Model Architecture
-
-The anomaly detection system uses a convolutional autoencoder architecture.
-
-Encoder
+Model Architecture, The anomaly detection system uses a convolutional autoencoder architecture. 
 
 Extracts important spatial features from images using:
 
@@ -81,8 +71,6 @@ Feature compression through a bottleneck representation
 Bottleneck Layer
 
 Captures the compressed representation of normal image patterns.
-
-Decoder
 
 Reconstructs the image using:
 
@@ -118,8 +106,6 @@ Stable training and validation loss
 Minimal overfitting
 
 Loss values stabilized around 0.06–0.08, indicating effective learning. 
-
-Team14_NN PPT
 
 Leather Defect Detection
 
